@@ -8,6 +8,6 @@ def main(out=ROOT/'outputs/claim1_source_audit'):
  with open(out/'results.csv','w',newline='') as f:
   w=csv.writer(f);w.writerow(['method','fpr95_percent']);w.writerows(ROWS)
  baseline=dict(ROWS)['baseline'];grod=dict(ROWS)['GROD']
- d={'claim':'GROD reduces FPR@95 from 21.97% to 0.12% (Table 1).','source_location':'content/6_experiment_icml2026.tex Table 1','baseline_fpr95_percent':baseline,'grod_fpr95_percent':grod,'absolute_reduction_percentage_points':round(baseline-grod,2),'verdict':'inconclusive','scope':'Deterministic primary-source table transcription and arithmetic audit only; no independent ImageNet-200/GROD execution, hence not verification.'}
+ d={'claim':'GROD reduces FPR@95 from 21.97% to 0.12% (Table 1).','source_location':'content/6_experiment.tex, CV experiments table, CIFAR-10 average row','baseline_fpr95_percent':baseline,'grod_fpr95_percent':grod,'absolute_reduction_percentage_points':round(baseline-grod,2),'verdict':'inconclusive','scope':'Deterministic primary-source table transcription and arithmetic audit only; no independent CIFAR-10/GROD execution, hence not verification.'}
  (out/'summary.json').write_text(json.dumps(d,indent=2)+'\n')
 if __name__=='__main__':main()

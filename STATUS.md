@@ -1,8 +1,13 @@
 # Status
-- OpenReview ID: `94FOsjgeHK`; 6 anchored live claims / 12 maximum points.
-- Phase: Claim 1 source/table CPU audit complete, **inconclusive**.
-- Source: pinned arXiv 2406.12915 PDF/source; manifest in `evidence/source/SHA256SUMS`.
-- Claim 1: Table-1 values 21.97% and 0.12% produce 21.85 percentage-point arithmetic reduction. This is source transcription only, not a reproduction or verification. Evidence: `outputs/claim1_source_audit/`.
-- Compute: local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute.
-- Next: source-audit feasibility of a small local OOD synthetic method fixture; ImageNet/BERT claims require resource audit.
-- Claim 1 attempt 2: **toy** local CPU 2-D feature-space GROD-style fixture preserves outward synthetic-OOD center generation, Mahalanobis ID-like filtering, and binary ID/OOD loss. It reports held-out synthetic AUROC/FPR@95 for seeds 17/23/29 against a nearest-ID Mahalanobis control, with raw arrays and hashes retained. It is not ViT, CIFAR, ImageNet, or a Table-1 reproduction; no reported 21.97%/0.12% claim is verified. Evidence: `outputs/claim1_synthetic_grod_toy/`.
+
+- Paper: **How Out-of-Distribution Detection Learning Theory Enhances Transformer: Learnability and Reliability**.
+- OpenReview ID: 94FOsjgeHK; six anchored claims / 12 maximum points.
+- Source pin: arXiv 2406.12915 PDF and source archive under evidence/source/.
+- Author implementation: yjzscode/GROD-OOD-Detection-with-Transformers at commit f64b493e38def879b96b3adf2282846fdec80bbb; only main was present at the audited head.
+- Compute: local CPU/local GTX 1050 only; no HF Jobs, CPU upgrade, paid, or remote compute.
+- Claim 1 source audit: the pinned CV table arithmetic is 21.97% − 0.12% = 21.85 percentage points; verdict remains inconclusive because no CIFAR-10/DINO/OpenOOD run was performed.
+- Claim 1 toy: reduced 2-D feature-space generator, Mahalanobis filter, binary ID/OOD loss, three seeds, and held-out synthetic OOD control. It is not a ViT, CIFAR, ImageNet, or Table-1 reproduction.
+- Claims 2–6: source and code paths documented in README; no paper-scale result reproduced.
+- Branch state: only main is retained; normalized target name is icml26-grod-ood-detection-transformers.
+- Publication: blocked for a full reproduction claim; AUTONOMOUS_STATE.json records publication_allowed=false.
+- Next: independently review Claim 1, then audit Claim 2 and reconcile the contract's text/theorem numbering with the pinned source.

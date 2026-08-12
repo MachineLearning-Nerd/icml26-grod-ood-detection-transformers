@@ -1,15 +1,18 @@
 {
   "schema_version": 1,
   "openreview_id": "94FOsjgeHK",
-  "phase": "claim_1_attempt_2_local_feature_grod_fixture_complete_toy",
-  "next_action": "independent_review_claim_1_toy_against_literal_table_1_then_claim_2_source_audit",
+  "phase": "documentation_claim_1_source_audit_and_toy_complete_next_claim_2_source_audit",
+  "next_action": "independent_review_claim_1_then_source_audit_claim_2_and_reconcile_contract_numbering",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
     "live_contract_saved",
     "source_archive_and_pdf_pinned",
     "claim_1_source_table_audit",
-    "claim_1_attempt_2_local_feature_grod_generator_filter_binary_loss_toy"
+    "claim_1_attempt_2_local_feature_grod_generator_filter_binary_loss_toy",
+    "author_implementation_commit_audited",
+    "claim_1_source_location_corrected",
+    "readme_claim_ledger_and_branch_inventory"
   ],
   "failed_attempts": [
     {
@@ -26,19 +29,29 @@
     "5": 0,
     "6": 0
   },
-  "last_checkpoint": "2026-08-03T00:30:00Z",
-  "last_known_git_commit": "217fcb60c5a8dca799011ea0c514c8d85f3cc06a",
+  "last_checkpoint": "2026-08-12",
+  "last_known_git_commit": "ad377ed6555517d55b0984a90838f14dfe377522",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "official_implementation": {
+    "repository": "https://github.com/yjzscode/GROD-OOD-Detection-with-Transformers",
+    "branch": "main",
+    "commit": "f64b493e38def879b96b3adf2282846fdec80bbb",
+    "availability": "public and inspected; not executed end-to-end"
+  },
   "claim_1_outcome": {
-    "verdict": "toy",
-    "scope": "Three-seed local CPU 2-D feature-space GROD-style synthetic-OOD generator, Mahalanobis filtering, and binary-loss fixture with held-out OOD AUROC/FPR@95 and nearest-ID Mahalanobis control; not ViT/CIFAR/ImageNet/Table-1.",
+    "verdict": "inconclusive",
+    "scope": "Deterministic source-table arithmetic audit plus a reduced 2-D feature-space GROD-style synthetic-OOD generator, Mahalanobis filter, binary-loss fixture, and held-out control. Not ViT, CIFAR, ImageNet, OpenOOD, or Table-1 reproduction.",
     "evidence": [
+      "outputs/claim1_source_audit/SHA256SUMS",
+      "outputs/claim1_source_audit/summary.json",
+      "outputs/claim1_source_audit/results.csv",
       "outputs/claim1_synthetic_grod_toy/PROTOCOL.md",
       "outputs/claim1_synthetic_grod_toy/raw.json",
       "outputs/claim1_synthetic_grod_toy/results.csv",
       "outputs/claim1_synthetic_grod_toy/summary.json",
-      "outputs/claim1_synthetic_grod_toy/SHA256SUMS"
+      "outputs/claim1_synthetic_grod_toy/SHA256SUMS",
+      "evidence/source/SHA256SUMS"
     ]
   }
 }
