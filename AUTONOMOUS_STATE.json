@@ -7,8 +7,8 @@
     "branch": "main",
     "branches": ["main"]
   },
-  "phase": "standardized_audit_dossier_ready",
-  "next_action": "normalize_history_and_publish_dossier",
+  "phase": "published_and_verified",
+  "next_action": "select_next_repository_from_collection_tracker",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
@@ -21,7 +21,10 @@
     "readme_claim_ledger_and_branch_inventory",
     "standardized_audit_dossier",
     "claim_evidence_source_environment_report_branch_citation_thank_you_docs",
-    "final_verifier_added"
+    "final_verifier_added",
+    "repository_renamed_and_history_normalized",
+    "remote_publication_verified",
+    "fresh_clone_verification"
   ],
   "failed_attempts": [
     {
@@ -39,7 +42,13 @@
     "6": 0
   },
   "last_checkpoint": "2026-08-19",
-  "last_known_git_commit": "088feb93a4315221deb33bb556ff3cd810ce3b07",
+  "last_known_git_commit": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
+  "remote_verification": {
+    "remote_main": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
+    "fresh_clone_commit": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
+    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=9 C1:inconclusive_toy C2:unverified C3:unverified C4:unverified C5:unverified C6:unverified publication_allowed=false",
+    "verified_on": "2026-08-19"
+  },
   "publication_allowed": false,
   "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
   "claim_statuses": {
