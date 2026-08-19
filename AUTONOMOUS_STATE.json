@@ -42,11 +42,11 @@
     "6": 0
   },
   "last_checkpoint": "2026-08-19",
-  "last_known_git_commit": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
+  "last_known_git_commit": "bb675494079f88aac55e8245563d5fd83e952ad5",
   "remote_verification": {
-    "remote_main": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
-    "fresh_clone_commit": "98d204c615ff793d48c3e9e6f43115f46a98ced8",
-    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 commits=9 C1:inconclusive_toy C2:unverified C3:unverified C4:unverified C5:unverified C6:unverified publication_allowed=false",
+    "remote_main": "bb675494079f88aac55e8245563d5fd83e952ad5",
+    "fresh_clone_commit": "bb675494079f88aac55e8245563d5fd83e952ad5",
+    "fresh_clone_verifier": "FINAL_AUDIT=VERIFIED branches=1 C1:inconclusive_toy C2:unverified C3:unverified C4:unverified C5:unverified C6:unverified publication_allowed=false",
     "verified_on": "2026-08-19"
   },
   "publication_allowed": false,
