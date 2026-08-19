@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "GROD: Claim-by-Claim Reproduction Audit"
+message: "If this audit is useful, please cite the paper and the audit repository."
+type: software
+authors:
+  - family-names: Zhou
+    given-names: Yijin
+  - family-names: Ge
+    given-names: Yutang
+  - family-names: Xie
+    given-names: Wenyuan
+  - family-names: Zeng
+    given-names: Linqian
+  - family-names: Dong
+    given-names: Xiaowen
+  - family-names: Wang
+    given-names: Yuguang
+repository-code: https://github.com/MachineLearning-Nerd/icml26-grod-ood-detection-transformers
+url: https://arxiv.org/abs/2406.12915
+date-released: 2026-08-19
+keywords:
+  - out-of-distribution detection
+  - transformers
+  - GROD
+  - reproduction audit
+

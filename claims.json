@@ -1,0 +1,20 @@
+{
+  "repository": "MachineLearning-Nerd/icml26-grod-ood-detection-transformers",
+  "former_repository": "MachineLearning-Nerd/icml26-repro-94FOsjgeHK-ood-learning-theory-transformers",
+  "paper": {
+    "title": "How Out-of-Distribution Detection Learning Theory Enhances Transformer: Learnability and Reliability",
+    "arxiv": "2406.12915",
+    "openreview": "94FOsjgeHK",
+    "authors": ["Yijin Zhou", "Yutang Ge", "Wenyuan Xie", "Linqian Zeng", "Xiaowen Dong", "Yuguang Wang"]
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
+  "publication_allowed": false,
+  "claims": [
+    {"id": "C1", "status": "INCONCLUSIVE_SOURCE_AUDIT_TOY", "evidence": ["outputs/claim1_source_audit", "outputs/claim1_synthetic_grod_toy"], "producer": "ViT-B/16 + GROD training + OpenOOD C10 average; local source arithmetic and reduced 2-D mechanism toy only"},
+    {"id": "C2", "status": "UNVERIFIED_PAPER_REPORTED_ONLY", "evidence": ["evidence/source/arxiv-2406.12915-source.tar.gz"], "producer": "Same ViT/OpenOOD C10 pipeline with AUROC aggregation; no local benchmark run"},
+    {"id": "C3", "status": "UNVERIFIED_SOURCE_CLAIM_MISMATCH", "evidence": ["evidence/source/arxiv-2406.12915-source.tar.gz", "SOURCE_AUDIT.md"], "producer": "BERT IMDB/Yelp and CLINC150 fine-tuning plus text OOD evaluation; contract values do not match literal pinned table"},
+    {"id": "C4", "status": "UNVERIFIED_THEOREM_SOURCE_AUDITED", "evidence": ["evidence/source/arxiv-2406.12915-source.tar.gz", "SOURCE_AUDIT.md"], "producer": "Transformer hypothesis-space theorem and Jackson-type proof; no independent proof audit"},
+    {"id": "C5", "status": "UNVERIFIED_ABLATION_PAPER_REPORTED_ONLY", "evidence": ["evidence/source/arxiv-2406.12915-source.tar.gz", "outputs/claim1_synthetic_grod_toy"], "producer": "Controlled module/parameter ablations; local toy keeps components together"},
+    {"id": "C6", "status": "UNVERIFIED_BENCHMARK_MATRIX_ABSENT", "evidence": ["evidence/source/arxiv-2406.12915-source.tar.gz", "SOURCE_AUDIT.md"], "producer": "Same-backbone baseline matrix over OpenOOD datasets; no local matrix or checkpoints"}
+  ]
+}

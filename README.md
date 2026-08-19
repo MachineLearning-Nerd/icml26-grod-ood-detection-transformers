@@ -11,6 +11,23 @@ The audit is evidence-first. It keeps the paper source, the author implementatio
 | Author implementation | [yjzscode/GROD-OOD-Detection-with-Transformers](https://github.com/yjzscode/GROD-OOD-Detection-with-Transformers) |
 | Audited implementation commit | [f64b493e](https://github.com/yjzscode/GROD-OOD-Detection-with-Transformers/tree/f64b493e38def879b96b3adf2282846fdec80bbb) |
 
+## Audit dossier
+
+| Document | Purpose |
+| --- | --- |
+| [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md) | Six claim production paths, local evidence, and exact boundaries |
+| [SOURCE_AUDIT.md](SOURCE_AUDIT.md) | Pinned paper/source archive and author-code audit |
+| [ENVIRONMENT.md](ENVIRONMENT.md) | Local compute policy and reproducibility limits |
+| [REPORT.md](REPORT.md) | Short verdict and next checkpoint |
+| [BRANCH_AUDIT.md](BRANCH_AUDIT.md) | Branch, history, and MachineLearning-Nerd attribution audit |
+| [CITATION.cff](CITATION.cff) | Machine-readable citation metadata |
+| [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md) | Thank-you note to the paper authors |
+| [claims.json](claims.json) / [reproduction_verdicts.json](reproduction_verdicts.json) | Machine-readable claim status |
+| [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) | Hash manifest for the audit evidence |
+| [verify_final.py](verify_final.py) | Fail-closed final repository gate |
+
+Run `python3 verify_final.py` from the repository root to check the published state. A passing gate does not upgrade any paper-scale claim.
+
 The author implementation was publicly available and had only a main branch at the audited head f64b493e38def879b96b3adf2282846fdec80bbb. Its own README reports testing with Python 3.8, CUDA 11.8, and PyTorch 2.2.0+cu118. The implementation was inspected at that exact commit; it was not executed end-to-end under this local-only audit.
 
 ## Current status

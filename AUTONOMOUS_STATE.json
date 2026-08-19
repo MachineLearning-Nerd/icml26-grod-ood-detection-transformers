@@ -1,8 +1,14 @@
 {
   "schema_version": 1,
   "openreview_id": "94FOsjgeHK",
-  "phase": "documentation_claim_1_source_audit_and_toy_complete_next_claim_2_source_audit",
-  "next_action": "independent_review_claim_1_then_source_audit_claim_2_and_reconcile_contract_numbering",
+  "github": {
+    "repository": "MachineLearning-Nerd/icml26-grod-ood-detection-transformers",
+    "former_repository": "icml26-repro-94FOsjgeHK-ood-learning-theory-transformers",
+    "branch": "main",
+    "branches": ["main"]
+  },
+  "phase": "standardized_audit_dossier_ready",
+  "next_action": "normalize_history_and_publish_dossier",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
@@ -12,7 +18,10 @@
     "claim_1_attempt_2_local_feature_grod_generator_filter_binary_loss_toy",
     "author_implementation_commit_audited",
     "claim_1_source_location_corrected",
-    "readme_claim_ledger_and_branch_inventory"
+    "readme_claim_ledger_and_branch_inventory",
+    "standardized_audit_dossier",
+    "claim_evidence_source_environment_report_branch_citation_thank_you_docs",
+    "final_verifier_added"
   ],
   "failed_attempts": [
     {
@@ -29,9 +38,18 @@
     "5": 0,
     "6": 0
   },
-  "last_checkpoint": "2026-08-12",
-  "last_known_git_commit": "ad377ed6555517d55b0984a90838f14dfe377522",
+  "last_checkpoint": "2026-08-19",
+  "last_known_git_commit": "088feb93a4315221deb33bb556ff3cd810ce3b07",
   "publication_allowed": false,
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
+  "claim_statuses": {
+    "C1": "INCONCLUSIVE_SOURCE_AUDIT_TOY",
+    "C2": "UNVERIFIED_PAPER_REPORTED_ONLY",
+    "C3": "UNVERIFIED_SOURCE_CLAIM_MISMATCH",
+    "C4": "UNVERIFIED_THEOREM_SOURCE_AUDITED",
+    "C5": "UNVERIFIED_ABLATION_PAPER_REPORTED_ONLY",
+    "C6": "UNVERIFIED_BENCHMARK_MATRIX_ABSENT"
+  },
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "official_implementation": {
     "repository": "https://github.com/yjzscode/GROD-OOD-Detection-with-Transformers",
